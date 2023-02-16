@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    }
+body{
+    overflow-x: hidden;
+    z-index: 2;
+   /* background: linear-gradient( rgb(147, 175, 22) , rgba(3, 210, 218, 0.933));*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+header{
+    color:black;    
+    display: flex;
+  /*  background: #dbd5d5;*/
+    justify-content: space-between;
+    padding:20px;
+    /*position: sticky;
+    top:0;*/
+    z-index:10000;
+}
+.logo {
+    font-size: 30px;
+    
+   display: inline;
+    padding-right: 15px;
+    color: #000;
+  /*  background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(8, 193, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   list-style:none;
+}
+header ul li {
+margin-right: 30px;
+transition: .3s;
+}
+header ul li:hover{
+transform: scale(1.1);
+}
+header ul li a{
+padding: 20px;
+border-radius: 30px;
+color: black;
+transition: .5s;
+}
+
+header ul li a:hover, .active{
+background: rgb(65, 167, 167);
+color: rgb(255, 255, 255);
+font-weight: bold;
+
+}
+header div img{
+display: inline;
+
+height: 50px;
+}
+header div {
+display: flex;
+gap:0px;
+}

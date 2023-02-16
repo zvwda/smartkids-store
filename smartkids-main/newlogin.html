@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        validated login form
+    </title>
+    <link href="newlogin.css " rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div>
+
+            <h1> <a href="imgg/haha.png" class="logo">Smart kids</a></h1>
+            <div class="img">
+
+                <img src="imgg/i.png">
+            </div>
+        </div>
+
+        <ul>
+            <li> <a href="#"> Home </a></li>
+            <li> <a href="#"> product </a></li>
+            <li> <a href="#"> shop </a> </li>
+            <li> <a href="#"> about us</a> </li>
+        </ul>
+    </header>
+    <div class="fo">
+        <div class="container">
+            <h1 class="login">
+             
+            </h1>
+            <form class="loginbox" action="home.html" method="post" name="form" onsubmit="return validated()">
+                <div class="font">Username</div>
+                <input type="text" autocomplete="off" placeholder="Enter username " class="username" name="email"/>
+                <div id="emailerror"> please fill this field</div>
+                <div class="font2">Password</div>
+                <input type="password" placeholder="Enter password" class="password" name="password" />
+                <div id="passerror"> please fill this field</div>
+                <button type="submit">Login</button>
+
+            </form>
+        </div>
+    </div>
+    <script src="valid.js"> </script>
+</body>
+</html>

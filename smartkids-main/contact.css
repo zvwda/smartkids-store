@@ -1,0 +1,358 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+}
+header{
+    color:black;    
+    display: flex;
+  /*  background: #dbd5d5;*/
+    justify-content: space-between;
+    padding:10px;
+    /*position: sticky;
+    top:0;*/
+    z-index:10000;
+    
+}
+.logo {
+    font-size: 30px;
+    
+   display: inline;
+    padding-right: 15px;
+    color: #000;
+    padding-left: 15px;
+  /*  background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(8, 193, 240));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;*/
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   list-style:none;
+}
+header ul li {
+margin-right: 30px;
+transition: .3s;
+}
+header ul li:hover{
+transform: scale(1.1);
+}
+header ul li a{
+padding: 20px;
+border-radius: 30px;
+color: black;
+transition: .5s;
+}
+
+header ul li a:hover, .active{
+background: rgb(65, 167, 167);
+color: rgb(255, 255, 255);
+font-weight: bold;
+
+}
+header div img{
+display: inline;
+
+height: 50px;
+}
+header div {
+display: flex;
+gap:0px;
+}
+.social{
+border-left: #000;
+border-width: 5;
+border-style: inset;
+padding: 10px;
+background-color: #bbb;
+
+}
+.social li a{
+padding: 5px;
+border-radius: 20px;
+transition: .5s;
+}
+.social li a:hover{
+background-color: #000;
+color: #ffff;
+font-weight: bold;
+}
+header{
+    background-color: #fff;
+    margin: 20px;
+}
+
+
+
+body {
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image:url("bg.jpg");
+    
+}
+
+.contact 
+{
+    align-items:center;
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    flex-direction: column;
+    
+}
+
+.contact .content{
+    max-width:800px;
+    text-align:center;
+
+}
+.contact .content p{
+    padding:1px;
+    text-align: center;
+}
+    .contact .content h1 {
+        font-size: 50px;
+        font-weight: 500;
+        color:cornflowerblue;
+        padding: -5px;
+    
+        font-family: 'DynaPuff', cursive;
+        font-family: 'Lobster', cursive;
+        font-family: 'Rubik Dirt', cursive;
+    }
+.container 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top:30px;
+}
+.container .contactinfo{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+
+}
+.container .contactinfo .box
+{
+       position:relative;
+       padding:20px 0;
+        display: flex;
+
+}
+.container .contactinfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    background: #ffffff;
+
+}
+.container .contactinfo .box .text {
+        font-size:16px;
+        margin-left:20px;
+        display: flex;
+        color:rgb(000000);
+        align-items: flex-start;
+        flex-direction: column;
+        font-weight: 300;
+ }
+.container .contactinfo .box .text .h3 
+{
+    font-weight:500;
+    display:flex;
+    justify-content:flex-start;
+}
+.contactform
+{
+    width:50%;
+    padding:40px;
+    background:#ffffff;
+}
+
+.contactform .inputbox
+{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+}
+.contactform .inputbox span 
+{
+    
+   position:absolute;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    left:0;
+    pointer-events:none;
+    transition:0.5s;
+    color:#666;
+  }
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+    transform: translateY(-20px)
+}
+    .contactform .inputbox input[type="submit"]
+ {
+     width:100px;
+     background:cornflowerblue;
+     color:#fff;
+     cursor:pointer;
+     padding:10px;
+     font-size:18px;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+  }
+  .contaner1 {
+    max-width: 1400px;
+  
+    margin: auto;
+  }
+  ul{
+    list-style: none;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4 {
+    font-size: 18px;
+    color: #ffff;
+    text-transform: capitalize;
+    margin: 30px;
+    font-weight: 500    ;   
+    position: relative;
+  }
+  /*.footer-col ::before{
+    content: ' ';
+    position: absolute;
+    left: 50% ; 
+    transform: translatex(-50%);
+    bottom: -10px ;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }*/
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .footer-col ul li :not(:last-child){
+    margin-bottom: 20px;
+  }
+  .footer-col ul .us{
+  width: 10px;
+  }
+  .footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffff;
+    padding-left: 8px;
+  }
+  .footer-col ul li {
+    padding: 2px;
+    text-align: center;
+  }
+  .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgpa(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+       color: #ffff;
+       transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffff;
+  }
+  
+  @media(max-width: 767px){
+    .footer-col {
+        width:50%;
+          margin-bottom: 30px;  
+    }
+  }
+  @media(max-width: 574px){
+    .footer-col {
+        width:100%;
+            
+    }
+  }
